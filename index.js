@@ -61,7 +61,7 @@ $(document).ready(function () {
         });
         if(valid){
             $.ajax({
-                url: "https://formspree.io/seema.cite@email.com",
+                url: "https://formspree.io/seema.cite@gmail.com",
                 method: "POST",
                 data: data,
                 dataType: "json"
