@@ -1,0 +1,493 @@
+@font-face {
+  font-face-name: optima;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+* {
+  color: #fff;
+  letter-spacing: 1px;
+}
+html,
+body,
+.home,
+#recent-work,
+#about-me {
+  width: 100%;
+  height: 100%;
+}
+.centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.show {
+  display: block;
+}
+.heading-font {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-weight: 400;
+}
+.caption {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  font-family: Lato, cursive;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
+#nav-bar-top {
+  -webkit-transition: all 0.7s ease-in;
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+.navbar-custom {
+  padding: 10px 0;
+  background: transparent;
+  font-size: 20px;
+  opacity: 1;
+  z-index: 1000;
+  border-color: transparent;
+}
+.navbar-custom .navbar-right:last-child {
+  margin-right: 5%;
+}
+.navbar-custom .menu-link {
+  text-decoration: none;
+  opacity: 1;
+  z-index: 1001;
+  outline: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+}
+.navbar-custom .menu-link span {
+  color: #fff;
+}
+.navbar-custom .menu-link span:hover {
+  border-bottom: 2px solid #fff;
+}
+.navbar-custom .menu-link span:active:focus {
+  border-bottom: 2px solid #fff;
+}
+.top-nav-collapse {
+  opacity: 1;
+  padding: 0;
+  background: #446CB3;
+  border-color: #e7e7e7;
+}
+header.home {
+  background: url('images/background.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+header.home .home-div .intro {
+  border-radius: 8px;
+  width: 38%;
+  height: 44%;
+  min-height: 310px;
+  min-width: 310px;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+  opacity: 0.9;
+  padding: 5% 10%;
+}
+header.home .home-div .intro-desc-wrapper {
+  width: 35%;
+  height: 35%;
+  min-height: 310px;
+  min-width: 310px;
+}
+header.home .home-div .intro-desc-wrapper .display-pic {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -90px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+header.home .home-div .intro-desc-wrapper .display-pic .pic {
+  background: url("images/seemasahu.jpg") no-repeat;
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div {
+  position: relative;
+  top: -90px;
+  text-align: center;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome {
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: Optima;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-welcome #greeting {
+  margin-right: 4px;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .name {
+  text-align: center;
+  text-transform: none;
+  font-family: optima;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  color: #fff;
+  font-family: optima;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+header.home .home-div .intro-desc-wrapper .intro-desc-div .intro-desc .know-me {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: optima;
+  font-size: 14px;
+  font-style: normal;
+}
+.gradient {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+#recent-work {
+  color:#2980B9;
+}
+#recent-work .bkgrnd{
+  background-color:rgb(236, 240, 241);
+  color:#2980B9;
+}
+#recent-work .altbkgrnd{
+  background-color:rgb(41, 128, 185);
+  color:#fff;
+}
+#recent-work .forground,#recent-work strong{
+  color:#2980B9;
+}
+.altbkgrnd strong{
+  color:#fff;
+}
+#recent-work .heading-font{
+  text-align:center;
+}
+#recent-work .extrapadding{
+  padding:60px;
+}
+#recent-work .projectbtn{
+  display: inline-block;
+    background: 0 0;
+    padding: .6rem 1.5rem;
+    border: 4px solid #2980B9;
+    border-radius: .4rem;
+    color: #2980B9;
+    font-size: initial;
+    transition: background-color .5s;
+}
+#recent-work .altprojectbtn{
+  display: inline-block;
+    background: 0 0;
+    padding: .6rem 1.5rem;
+    border: 4px solid #fff;
+    border-radius: .4rem;
+    color: #fff;
+    font-size: initial;
+    transition: background-color .5s;
+}
+
+#recent-work .project-image-container{
+    width: 84%;
+    min-height: 50%;
+    padding:30px;
+    background: #000;
+    border-radius: 10px;
+    margin:38px 0;
+
+}
+
+ul li{
+  list-style-type:none;
+}
+#about-me {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+  position: relative;
+}
+#about-me .background {
+  background: url('images/webpage2.jpg') no-repeat bottom center scroll #376dac;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+#about-me .background .background-overlay {
+  width: inherit;
+  height: inherit;
+  background: rgba(4, 12, 30, 0.7);
+}
+#about-me h3,
+#about-me h4 {
+  text-align: center;
+}
+#about-me .row {
+  padding: 20px 0;
+}
+#about-me .about-me-desc {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  box-sizing: border-box;
+  font-weight: 300;
+  line-height: 1.4;
+}
+#about-me .design-skills figure {
+  text-align: center;
+}
+#about-me .design-skills figure p {
+  padding: 10px 5px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  box-sizing: border-box;
+  font-weight: 300;
+  line-height: 1.4;
+}
+#about-me .design-skills img {
+  max-width: 100%;
+  max-height: 214px;
+  margin: 0 auto;
+}
+#about-me .skill-chart-div svg path {
+  stroke-width: 17;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+#about-me .skill-chart-div svg #js:hover,
+#about-me .skill-chart-div svg #angularjs:hover,
+#about-me .skill-chart-div svg #jquery:hover,
+#about-me .skill-chart-div svg #html:hover,
+#about-me .skill-chart-div svg #css:hover,
+#about-me .skill-chart-div svg #bootstrap:hover,
+#about-me .skill-chart-div svg #creativity:hover {
+  stroke-width: 45;
+  opacity: 0.6;
+}
+#about-me .skills {
+  text-align: center;
+}
+#about-me .skills ul {
+  list-style: none;
+}
+#about-me .skills ul li {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+#about-me .tools-table {
+  margin: 0 auto;
+}
+#about-me .tools-table tr td {
+  padding: 10px 0;
+}
+#about-me .tools-table tr td.tool-heading {
+  text-align: right;
+  font-weight: bold;
+  width: 50%;
+}
+#about-me .tools-table tr td.tool-desc {
+  padding-left: 15px;
+  font-weight: 300;
+}
+
+
+
+#contact {
+  width: 100%;
+  height: auto;
+  1background: #E9D460;
+}
+#contact h2 {
+  margin: 0;
+  padding-top: 60px;
+  text-align: center;
+  color: #376dac;
+}
+#contact .caption {
+  margin: 20px 0;
+  color: #376dac;
+}
+#contact .contact-container {
+  background: url("images/mailbox.png") no-repeat 95% 100%;
+  height: 100%;
+}
+#contact .contact-container .contactForm {
+  width: 80%;
+  margin: 4% auto;
+  color: #376dac;
+
+}
+#contact .contact-container .contactForm #responseText {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: green;
+  width: 100%;
+}
+#contact .contact-container .contactForm .col-md-4 {
+  padding-top: 10px;
+}
+#contact .contact-container .contactForm .form-group {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+#contact .contact-container .contactForm .form-group input,
+#contact .contact-container .contactForm .form-group textarea {
+  color: #376dac;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #376dac;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+#contact .contact-container .contactForm .form-group textarea {
+  color: #376dac;
+  min-height: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #376dac;
+}
+#contact .contact-container .contactForm .form-group label {
+  color: #376dac;
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  font-weight: 300;
+}
+#contact .contact-container .contactForm .form-group .message-lable {
+  top: 20%;
+  padding: 10px;
+}
+#contact .contact-container .contactForm .form-group input:focus + label,
+#contact .contact-container .contactForm .form-group input.has-value + label,
+#contact .contact-container .contactForm .form-group textarea:focus + label,
+#contact .contact-container .contactForm .form-group textarea.has-value + label {
+  top: 0px;
+  font-size: 16px;
+}
+#contact .contact-container .contactForm .form-group .sendBtn {
+  float: right;
+  margin-top: 10px;
+  border-radius: 0;
+}
+#contact .contact-container .contactForm .form-group .has-error {
+  color: rgba(202, 0, 0, 0.69);
+  top: 0px;
+  display: none;
+}
+footer {
+  height: 20%;
+  background: #446CB3;
+  border-top: #fff 1px solid;
+}
+footer .stay-connect {
+  text-align: center;
+  background: #446CB3;
+}
+footer .stay-connect .icon-mail {
+  text-decoration: none;
+  color: #fff;
+}
+#skillsres,#MCimg,#Boottimg{
+  display:block;
+}
+@media (min-width: 1199px) {
+  header.home {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 992px) {
+  #contact #contact-form-Id textarea {
+    min-height: 50px !important;
+  }
+  #contact #contact-form-Id .message-lable {
+    top: 29%;
+    padding: 5px;
+  }
+  #contact #contact-form-Id textarea:focus + label,
+  #contact #contact-form-Id textarea.has-value + label {
+    top: 0px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width : 768px){
+#skillsres,#MCimg,#Boottimg{
+  display:none;
+}
+
+}
