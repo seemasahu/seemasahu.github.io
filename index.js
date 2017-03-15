@@ -20,18 +20,13 @@ $(document).ready(function () {
 
 
     $('.contactForm').on("keyup",'input, textarea', function () {
-      //console.log("coming"+$(this).prev().text());
-          var level = $(this).prev().text()
-          //console.log(level);
+
 
         if($(this).val().length > 0){
-          $(this).prev().text("");
+
             $(this).addClass("has-value");
         }
-        if($(this).val().length == 0){
-          //console.log(level);
-          $(this).prev().text(level);
-        }
+        
     });
 
     $('.contactFormClass').on('keyup','.requiredClass',function () {

@@ -485,7 +485,7 @@ footer .stay-connect .icon-mail {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width : 768px){
+@media only screen and (max-width : 768px){
 #skillsres,#MCimg,#Boottimg{
   display:none;
 }
