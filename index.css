@@ -471,23 +471,14 @@ footer .stay-connect .icon-mail {
     background-attachment: fixed;
   }
 }
-@media (max-width: 992px) {
-  #contact #contact-form-Id textarea {
-    min-height: 50px !important;
-  }
-  #contact #contact-form-Id .message-lable {
-    top: 29%;
-    padding: 5px;
-  }
-  #contact #contact-form-Id textarea:focus + label,
-  #contact #contact-form-Id textarea.has-value + label {
-    top: 0px;
-  }
-}
+
 
 @media only screen and (max-width : 768px){
 #skillsres,#MCimg,#Boottimg{
   display:none;
+}
+#contact{
+  margin:20px 0px;
 }
 
 }
